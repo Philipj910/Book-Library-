@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Libary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>My Library</h1>
+            <h5 id="booksTotal">Books Read: </h5>
+        </div>
+        <form id="form">
+            <h4>Add a book here:</h4>
+
+            <label for="name">Name:</label>
+            <input type="text" name="text" id="text" placeholder="Team of Rivals" required>
+
+            <label for="author">Author:</label>
+            <input type="text" name="author" id="author" placeholder="Doris Kearns Goodwin" required>
+
+            <label for="pages">Pages:</label>
+            <input type="number" name="pages" id="pages" placeholder="944" required>
+
+            <div>Read:
+                    <label id="textRead" for="readYes">Yes</label>
+                    <input type="radio" name="read" id="readYes" value="Yes">
+            
+                    <label id="textRead" for="readNo">No</label>
+                    <input type="radio" name="read" id="readYes readNo" value="No">
+            </div>
+
+        </form>
+        <div class="submitBtn">
+            <button type="submit" id="submitBook">Submit</button>
+        </div>
+        <div class="displayBook" id="displayBook">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
